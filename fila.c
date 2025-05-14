@@ -1,9 +1,4 @@
-#include <fila.h>
-
-typedef struct {
-    int dados[TAMANHO_MAX];
-    int tamanho;
-} Fila;
+#include "fila.h"
 
 void inicializar_fila(Fila* fila)
 {

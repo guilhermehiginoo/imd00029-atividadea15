@@ -1,6 +1,12 @@
 #ifndef TAMANHO_MAX
 #define TAMANHO_MAX 100
 
+
+typedef struct {
+    int dados[TAMANHO_MAX];
+    int tamanho;
+} Fila;
+
 void inicializar_fila(Fila* fila);
 int fila_vazia(Fila* fila);
 int fila_cheia(Fila* fila);
