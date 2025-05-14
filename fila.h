@@ -1,0 +1,12 @@
+#ifndef TAMANHO_MAX
+#define TAMANHO_MAX 100
+
+void inicializar_fila(Fila* fila);
+int fila_vazia(Fila* fila);
+int fila_cheia(Fila* fila);
+void inserir_fila(Fila* fila, int valor);
+int remover_fila(Fila* fila);
+int consultar_primeiro(Fila* fila);
+void exibir_fila(Fila* fila);
+
+#endif
