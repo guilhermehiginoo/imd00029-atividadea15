@@ -20,9 +20,9 @@ int fila_cheia(Fila* fila)
 
 void inserir_fila(Fila* fila, int valor)
 {
-  if(fila_cheia(fila)){
+  if(fila_cheia(fila)) {
     printf("A fila está cheia!");
-  }else{
+  } else {
     fila->dados[fila->tamanho] = valor;
     fila->tamanho++;
   }
@@ -31,10 +31,10 @@ void inserir_fila(Fila* fila, int valor)
 
 int remover_fila(Fila* fila)
 {
-  if(fila_vazia(fila)){
+  if(fila_vazia(fila)) {
     printf("A fila está vazia!\n");
     return -1;
-  }else{
+  }else {
     int valor = fila->dados[0];
  
     for (int i = 1; i < fila->tamanho; i++) {
@@ -48,10 +48,10 @@ int remover_fila(Fila* fila)
 
 int consultar_primeiro(Fila* fila)
 {
-  if(fila_vazia(fila)){
+  if(fila_vazia(fila)) {
     printf("A fila está vazia!\n");
     return -1;
-  }else{
+  } else {
     return fila->dados[0];
   }
 }
@@ -59,9 +59,9 @@ int consultar_primeiro(Fila* fila)
 
 void exibir_fila(Fila* fila)
 {
-  if(fila_vazia(fila)){
+  if(fila_vazia(fila)) {
     printf("A fila está vazia!\n");
-  }else{
+  } else {
     printf("Fila: ");
     for(int i = 0; i < fila->tamanho; i++){
       printf("%d ", fila->dados[i]);
